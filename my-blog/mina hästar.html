@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Hästar - Jorvik Journals</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Horse collection styles (kept from previous version) */
+        .horse-collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+        
+        .horse-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .horse-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .horse-name {
+            color: #000;
+            margin-bottom: 5px;
+        }
+        
+        .horse-stats {
+            margin: 10px 0;
+        }
+        
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .stat-name {
+            font-weight: bold;
+        }
+        
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .horse-collection {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .horse-collection {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with navigation -->
+        <header>
+            <h1>Jorvik Journals</h1>
+            <nav>
+                <ul>
+                    <li><a href="hem.html">Hem</a></li>
+                    <li><a href="arkiv.html">Arkiv</a></li>
+                    <li><a href="mina hästar.html">Mina Hästar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <!-- Main content area for horses -->
+            <main>
+                <h2>Mina hästar</h2>
+                <p>Här kan du se alla hästar jag äger i spelet!</p>
+                
+                <div class="horse-collection">
+                    <!--  Roseice "Rosie" -->
+                    <div class="horse-card">
+                        <img src="images/roseice.png" alt="Roseice">
+                        <h3 class="horse-name">Roseice "Rosie"</h3>
+                        <p>Min första häst.</p>
+                        <div class="horse-stats">
+                            <div class="stat">
+                                <span class="stat-name">Ras:</span>
+                                <span>Jorvikiskt Varmblod</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Kön:</span>
+                                <span>Sto</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Ålder:</span>
+                                <span>17 år</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Daybreak "Dante" -->
+                    <div class="horse-card">
+                        <img src="images/dante.png" alt="Daybreak">
+                        <h3 class="horse-name">Daybreak "Dante"</h3>
+                        <p>Min ponny</p>
+                        <div class="horse-stats">
+                            <div class="stat">
+                                <span class="stat-name">Ras:</span>
+                                <span>Dartmoorponny</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Kön:</span>
+                                <span>Valack</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Ålder:</span>
+                                <span>6 år</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brightfriend -->
+                    <div class="horse-card">
+                        <img src="images/brightfriend.png" alt="Brightfriend">
+                        <h3 class="horse-name">Brightfriend "Bestfriend"</h3>
+                        <p>Döpt efter en underbar valckak jag mötte på ett ridläger.</p>
+                        <div class="horse-stats">
+                            <div class="stat">
+                                <span class="stat-name">Ras:</span>
+                                <span>Selle Français</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Kön:</span>
+                                <span>Valack</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Ålder:</span>
+                                <span>8 år</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Cloudie -->
+                    <div class="horse-card">
+                        <img src="images/cloudie3.png" alt="Cloudie">
+                        <h3 class="horse-name">Cloudie</h3>
+                        <p>Vacker som en dröm når hon alltid högt i dressyrtävlingarna.</p>
+                        <div class="horse-stats">
+                            <div class="stat">
+                                <span class="stat-name">Ras:</span>
+                                <span>Holländskt Varmblod</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Kön:</span>
+                                <span>Sto</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Ålder:</span>
+                                <span>11 år</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oldking -->
+                    <div class="horse-card">
+                        <img src="images/odin.png" alt="Oldking">
+                        <h3 class="horse-name">Oldking "Odin"</h3>
+                        <p>En riktigt fin herre vars hovar alltid blänker.</p>
+                        <div class="horse-stats">
+                            <div class="stat">
+                                <span class="stat-name">Ras:</span>
+                                <span>Frieserhäst</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Kön:</span>
+                                <span>Valack</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Ålder:</span>
+                                <span>21 år</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar with about me info -->
+            <aside class="sidebar">
+                <div class="about-me-container">
+                    <h3>Om mig</h3>
+                    <img src="images/dalma.jpeg" alt="Bloggförfattare">
+                    <p>Hej! Jag heter Dalma Starwater och hamnade på Jorvik för första gången våren 2015. På bloggen kan du läsa allt om mina äventyr och upptåg på ön.</p>
+                </div>
+                
+                <div class="recent-posts">
+                    <ul>
+                        <!-- More recent posts will be added here -->
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Jorvik Journals. Alla rättigheter förbehållna.</p>
+        </footer>
+    </div>
+</body>
+</html>
